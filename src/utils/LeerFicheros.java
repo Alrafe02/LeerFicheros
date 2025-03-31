@@ -42,7 +42,7 @@ public class LeerFicheros {
 		//Creamos fecha para el nombre del archivo
 		String timeStamp = new SimpleDateFormat("yyyyMMdd").format(Calendar.getInstance().getTime());
 		//Fichero donde escribirá los resultados
-		BufferedWriter ficheroEscribir= new BufferedWriter(new FileWriter("C:\\Users\\a.fernandez\\Downloads\\"+timeStamp+".txt", true));
+		BufferedWriter ficheroEscribir= new BufferedWriter(new FileWriter("Ruta de la carpeta a escribir "+timeStamp+".txt", true));
 		Scanner s = null;
 		//System.out.println("Num a buscar");
 		//String num = scan.nextLine();
@@ -55,7 +55,7 @@ public class LeerFicheros {
 
 
 		//Ruta de la carpeta + nombre del fichero a leer
-        File fichero = new File("C:\\Users\\a.fernandez\\Desktop\\Seriales\\leerdesdejulio\\"+ficheroNombre+"");
+        File fichero = new File("Ruta de la carpeta a leer""+ficheroNombre+"");
 		try {
 			// Leemos el contenido del fichero
 			System.out.println("... Leemos el contenido del fichero ...");
